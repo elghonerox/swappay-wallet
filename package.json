@@ -1,0 +1,38 @@
+{
+  "name": "swappay-wallet",
+  "version": "1.0.0",
+  "description": "Decentralized wallet with OKX DEX integration for ETHCC Hackathon 2025",
+  "main": "index.js",
+  "scripts": {
+    "install-all": "npm install && cd frontend && npm install && cd ../backend && npm install",
+    "dev": "concurrently \"npm run dev:backend\" \"npm run dev:frontend\"",
+    "dev:frontend": "cd frontend && npm start",
+    "dev:backend": "cd backend && npm run dev",
+    "build": "cd frontend && npm run build",
+    "test": "cd backend && npm test",
+    "deploy:testnet": "cd backend && npm run deploy:sepolia",
+    "deploy:mainnet": "cd backend && npm run deploy:mainnet",
+    "verify": "cd backend && npm run verify",
+    "lint": "eslint . --ext .js,.jsx",
+    "format": "prettier --write ."
+  },
+  "keywords": [
+    "ethereum",
+    "defi",
+    "wallet",
+    "okx",
+    "dex",
+    "hackathon"
+  ],
+  "author": "SwapPay Team",
+  "license": "MIT",
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^6.1.0",
+    "concurrently": "^7.6.0",
+    "eslint": "^8.57.0",
+    "prettier": "^3.0.0"
+  },
+  "dependencies": {
+    "dotenv": "^17.2.1"
+  }
+}
