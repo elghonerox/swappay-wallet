@@ -1,4 +1,3 @@
-SwapPay Wallet Backend
 The backend for SwapPay Wallet, built for the OKX ETHCC Hackathon 2025, provides the smart contract and server infrastructure for a non-custodial DeFi wallet on the XLayer testnet (chain ID 195). It integrates with the OKX DEX API for token swaps, with the frontend hosted in a separate repository: swappay-frontend.
 Features
 
@@ -77,3 +76,4 @@ Hackathon Submission
 This repository is part of the OKX ETHCC Hackathon 2025 submission. The demo video and full details are available via DoraHacks, showcasing OKX DEX API integration, XLayer testnet compatibility, and security features.
 License
 MIT License
+
